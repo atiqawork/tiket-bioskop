@@ -1,14 +1,12 @@
 package bioskop.model;
 
 public class Jadwal {
-    // Atribut private untuk menerapkan Enkapsulasi
     private String jamTayang;
     private String tanggalTayang;
 
-    // Constructor dengan Shadowing (keyword this)
     public Jadwal(String jamTayang, String tanggalTayang) {
-        this.jamTayang = jamTayang;
-        this.tanggalTayang = tanggalTayang;
+      this.jamTayang = jamTayang;
+      this.tanggalTayang = tanggalTayang;
     }
 
     // Getter untuk jam tayang
@@ -36,13 +34,11 @@ public class Jadwal {
         return this.tanggalTayang + " (" + this.jamTayang + ")";
     }
 
-    // Method untuk menampilkan informasi jadwal secara rapi
     public void tampilkanJadwal() {
         System.out.println("Tanggal Tayang : " + this.tanggalTayang);
         System.out.println("Jam Tayang     : " + this.jamTayang);
     }
     
-    // Overriding method toString bawaan Object
     @Override
     public String toString() {
         return "Jadwal: " + getWaktu();

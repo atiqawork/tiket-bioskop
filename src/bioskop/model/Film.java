@@ -9,6 +9,7 @@ public class Film {
     private int durasiMenit; 
     private double hargaDasar;
 
+    //konstruktor
     public Film(String judul, GenreFilm genre, int batasUmur, int durasiMenit, double hargaDasar) {
         this.judul = judul;
         this.genre = genre;
